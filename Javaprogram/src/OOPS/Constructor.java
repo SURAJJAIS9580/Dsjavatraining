@@ -3,14 +3,14 @@ package OOPS;
 public class Constructor {
     public static void main(String[] args) {
         //call the class instance using object
-        StudentProfile studentProfile = new TrainerProfile();
+        StudentProfile studentProfile = new StudentProfile();
 
     }
 }
 
-class TrainerProfile{
+class StudentProfile{
     //create a constructor and print name
-  TrainerProfile(){
-        System.out.println("Im suraj jaiswal is student");
+  StudentProfile(){
+        System.out.println("my name is Suraj Jaiswal i am  student");
     }
 }
