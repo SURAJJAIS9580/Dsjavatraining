@@ -37,8 +37,7 @@ class TrainerProfile{
         System.out.println(trainerName + trainerTechnology);
     }
     int noofhoursCompleted(int noOfdays){
-        int hours = 0;
-        return hours;
+        return noOfdays*3;
     }
 }
 
