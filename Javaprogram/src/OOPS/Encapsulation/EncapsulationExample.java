@@ -7,10 +7,12 @@ public class EncapsulationExample {
         TrainerProfile trainerProfile = new TrainerProfile();
         trainerProfile.setTrainerEmail("Pawansharma548@gmail.com");
         trainerProfile.setTrainerName("Pawan Sharma");
-        trainerProfile.setTrainerTechnology("Java Android IOS Flutter React Native");
+        trainerProfile.setTrainerTechnology("Java");
+
 
         System.out.println(trainerProfile.getTrainerName()+ "\n"+
-                trainerProfile.getTrainerEmail() +"\n"+ trainerProfile.trainerTechnology );
+                trainerProfile.getTrainerEmail() +"\n"+ trainerProfile.getTrainerTechnology());
+
     }
 }
 
@@ -45,3 +47,5 @@ class TrainerProfile{
     String trainerTechnology;
 
 }
+
+

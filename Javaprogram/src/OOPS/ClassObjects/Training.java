@@ -9,22 +9,25 @@ public class Training {
         trainerProfile.trainerName = "pawan sharma";
         trainerProfile.trainerEmail = "pawansharma5857@gmail.com";
         trainerProfile.trainerTechnology = "JAVA";
+        
         System.out.println("My Name is "+trainerProfile.trainerName  +
-               " my email "+ trainerProfile.trainerEmail +" and my Technology is"+ trainerProfile.trainerTechnology );
+               " my email "+ trainerProfile.trainerEmail +" and my Technology is"+ trainerProfile.trainerTechnology  );
         Student student = new Student();
-        System.out.println("Enter the student name");
+        System.out.println("Enter the student name:");
+        System.out.println("My Technology is:");
         Scanner scanner = new Scanner(System.in);
         student.studentName=scanner.nextLine();
-        student.studentName = "suraj jaiswal";
-        student.studentEnrolledTechnology = "JAVA";
-        System.out.println("My Name is "+student.studentName  + " My technology is ="+ student.studentEnrolledTechnology );
+        student.studentEnrolledTechnology= scanner.nextLine();
+        student.studentName="Suraj Jaiswal";
+        student.studentEnrolledTechnology="Java";
+        System.out.println("My Name is "+student.studentName  + " My technology is "+ student.studentEnrolledTechnology );
 
         System.out.println("Enter no of days");
         int days = scanner.nextInt();
-        int hours = scanner.nextInt();
+
 
         // to call the method
-        trainerProfile.printTrainerProfile( trainerProfile.trainerName,trainerProfile.trainerTechnology);
+        trainerProfile.printTrainerProfile( trainerProfile.trainerName,trainerProfile.trainerTechnology,trainerProfile.trainerEmail);
     }
 }
 
@@ -32,14 +35,22 @@ class TrainerProfile{
     String trainerName;
     String trainerEmail;
     String trainerTechnology;
+    int noOfHoursCompleted;
 
-    void printTrainerProfile(String trainerName,String trainerTechnology){
-        System.out.println(trainerName + trainerTechnology);
+    void printTrainerProfile(String trainerName,String trainerTechnology,String trainerEmail,int noOfHoursCompleted){
+        System.out.println(trainerName + trainerTechnology + trainerEmail + noOfHoursCompleted );
     }
-    int noofhoursCompleted(int noOfdays){
-        return noOfdays*3;
+
+
+    int noOfHoursCompleted() {
+        int noOfDays= 0;
+        return noOfDays*3;
+        }
+
+    public void printTrainerProfile(String trainerName, String trainerTechnology, String trainerEmail) {
     }
 }
+
 
 class Student{
     String studentName;

@@ -5,6 +5,7 @@ public class Inheritance {
         System.out.println("Im child");
         Parents parents = new Parents();
         parents.printName();
+        //using inheritance call grandparent method
         parents.printGrandParentName();
     }
 }
